@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #2a3ca7;
+    padding: 6px;
+}
+
+header > p{
+    color: #fcfcfc;
+    display: inline-block;
+    margin: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+header > p:hover{
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+
+header > p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* distância do texto */
+    width: 0;
+    height: 2px; /* espessura da linha */
+    background-color: #fcfcfc;
+    transition: width 0.3s ease;
+}
+
+header > p:hover::after {
+    width: 100%; /* linha aparece */
+}
+
+main{
+    background-color: #fcfcfc;
+}
+
+section{
+    text-align: center;
+    padding: 40px;
+}
+
+img{
+    width: 400px;
+}
+
+h2{
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+button.botao-padrao{
+    padding: 16px 40px;
+    border-radius: 50px;
+    border: 1px solid #1A1A1E;
+    background-color: #3d57ec;
+    color: #fcfcfc;
+    margin-top: 18px;
+    font-size: 16px;
+
+    /* Transição suave */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button.botao-padrao:hover{
+    background-color: #67adf3;
+    color: black;
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid #505050;
+}
+
+footer{
+    padding: 24px;
+}
+
+footer > p{
+    color: #a7a5a5;
+    text-align: center;
+    font-size: 15px;
+}
